@@ -1,0 +1,121 @@
+:root{
+    --green-color: #d5ebd9;
+}
+body,html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    background-color: black;
+}
+aside .container {
+    padding: 0 30px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    max-height: 500px;
+}
+aside .container > p {
+    text-align: center;
+}
+aside .container p:nth-child(3){
+    text-align: justify;
+}
+section {
+    width: 67%;
+    background-color: var(--green-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__img{
+    height: 45%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__img img {
+    width: 301px;
+    height: 263px;
+}
+.container__form{
+    height: 45%;
+    width: 70%;
+}
+.container__form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container__form form input {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: #ffffff00;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+.container__form form label:nth-child(2n+1) {
+    align-self: flex-start;
+}
+.container__form--buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    height: 60px;
+}
+.container__form--buttons a{
+    padding-top: 11px;
+    text-decoration: none;
+    color: black;
+}
+.container__form--buttons a:hover{
+    text-decoration: underline;
+    color: rgb(100,100,100);
+}
+
+.container__form--buttons button {
+    font-family: 'Muli', sans-serif;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+.container__form--buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}
+@media (max-width: 800px){
+    body,html{
+        flex-direction: column;
+        height: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .container__img img {
+        width: 241px;
+        height: 203px;
+    }
+    section {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+}
