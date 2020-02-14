@@ -38,6 +38,7 @@ section {
 .container__img{
     height: 45%;
     width: 70%;
+    min-width: 133px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,5 +118,28 @@ section {
         width: 100%;
         height: auto;
         justify-content: flex-start;
+    }
+}
+@media (max-width: 200px){
+    .container__img{
+        padding: 0;
+        display: block;
+        height: 93px;
+    }
+    .container__img img {
+        width: 131px;
+        height: 93px;
+    }
+    .container__form--buttons {
+        flex-direction: column;
+    }
+    p {
+        font-size: 10px;
+    }
+    .container__form form {
+        justify-content: flex-start;
+    }
+    section{
+    height: 100%;
     }
 }
