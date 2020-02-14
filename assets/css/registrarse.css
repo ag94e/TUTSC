@@ -1,0 +1,51 @@
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+}
+.section {
+    width: 33%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__container {
+    background-color: white;
+    width: 70%;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+button{
+    font-family: 'Muli', sans-serif;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+.section-left{
+    width: 67%;
+    background-color: white;
+}
